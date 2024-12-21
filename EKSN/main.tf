@@ -4,7 +4,7 @@ module "vpc" {
   name = "jenkins-vpc"
   cidr = var.vpc_cidr
 
-  azs = ["ap-south-1a"]
+  azs = ["ap-south-1a", "ap-south-1b"]
 
   private_subnets = var.private_subnets
   public_subnets  = var.public_subnets
